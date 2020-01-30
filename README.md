@@ -117,4 +117,5 @@ Feedstock Maintainers
 =====================
 
 * [@Bezier89](https://github.com/Bezier89/)
+* [@pg-hbk](https://github.com/pg-hbk/)
 
