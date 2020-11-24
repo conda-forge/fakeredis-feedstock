@@ -5,11 +5,9 @@ Home: https://github.com/jamesls/fakeredis
 
 Package license: BSD
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fakeredis-feedstock/blob/master/LICENSE.txt)
 
 Summary: Fake implementation of redis API for testing purposes.
-
-
 
 Current build status
 ====================
