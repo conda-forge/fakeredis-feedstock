@@ -1,7 +1,7 @@
 About fakeredis
 ===============
 
-Home: https://github.com/jamesls/fakeredis
+Home: https://github.com/cunla/fakeredis-py
 
 Package license: BSD-3-Clause
 
