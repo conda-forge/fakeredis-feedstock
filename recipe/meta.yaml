@@ -21,6 +21,7 @@ requirements:
     - redis-py
     - six >=1.12
     - sortedcontainers
+    - poetry
   run:
     - python >=3.7,<4
     - redis-py <4.4
@@ -28,8 +29,6 @@ requirements:
     - sortedcontainers >=2.4.0,<3
 
 test:
-  requires:
-    - poetry
   imports:
     - fakeredis
 
