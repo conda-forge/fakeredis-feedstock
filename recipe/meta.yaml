@@ -28,6 +28,8 @@ requirements:
     - sortedcontainers >=2.4.0,<3
 
 test:
+  requires:
+    - poetry
   imports:
     - fakeredis
 
