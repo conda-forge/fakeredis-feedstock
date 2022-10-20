@@ -25,7 +25,7 @@ requirements:
     - python >=3.7,<4
     - redis-py <4.4
     - six >=1.12
-    - sortedcontainers >= 2.4.0,<3
+    - sortedcontainers >=2.4.0,<3
 
 test:
   imports:
