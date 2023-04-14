@@ -1,5 +1,5 @@
 {% set name = "fakeredis" %}
-{% set version = "1.9.4" %}
+{% set version = "2.10.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 17415645d11994061f5394f3f1c76ba4531f3f8b63f9c55a8fd2120bebcbfae9
+  sha256: c5dcb070ef3219226e1d6db8836ddad47da1fc821270f6e89cfeb5da1f7f2e38
 
 build:
   number: 0
@@ -19,13 +19,11 @@ requirements:
     - pip
     - python >=3.7
     - redis-py
-    - six >=1.12
     - sortedcontainers
     - poetry
   run:
     - python >=3.7,<4
     - redis-py <4.4
-    - six >=1.12
     - sortedcontainers >=2.4.0,<3
 
 test:
@@ -42,5 +40,3 @@ about:
 extra:
   recipe-maintainers:
     - cunla
-    - Bezier89
-    - pg-hbk
