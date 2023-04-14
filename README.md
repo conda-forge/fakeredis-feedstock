@@ -143,6 +143,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@Bezier89](https://github.com/Bezier89/)
-* [@pg-hbk](https://github.com/pg-hbk/)
+* [@cunla](https://github.com/cunla/)
 

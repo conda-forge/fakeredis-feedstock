@@ -1,5 +1,5 @@
 {% set name = "fakeredis" %}
-{% set version = "1.9.4" %}
+{% set version = "2.10.3" %}
 
 package:
   name: {{ name|lower }}
@@ -19,7 +19,6 @@ requirements:
     - pip
     - python >=3.7
     - redis-py
-    - six >=1.12
     - sortedcontainers
     - poetry
   run:
@@ -37,10 +36,8 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: Fake implementation of redis API (redis-py) for testing purposes.
+  summary: Implementation of Redis in python. fully compatible with using redis-py.
 
 extra:
   recipe-maintainers:
     - cunla
-    - Bezier89
-    - pg-hbk
