@@ -1,11 +1,11 @@
-About fakeredis
-===============
+About fakeredis-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fakeredis-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/cunla/fakeredis-py
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fakeredis-feedstock/blob/main/LICENSE.txt)
 
 Summary: Fake implementation of redis API (redis-py) for testing purposes.
 
