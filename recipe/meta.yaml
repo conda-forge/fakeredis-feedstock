@@ -1,5 +1,5 @@
 {% set name = "fakeredis" %}
-{% set version = "2.22.0" %}
+{% set version = "2.23.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d063085fe962d16637cfe21044f277cfc54d6fb456d12a7c87514990c3fac98e
+  sha256: 7babb853a9a42ebe46acd89294bd7fc462dad619a870601f36c27dea007a0019
 
 build:
   number: 0
