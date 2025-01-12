@@ -10,23 +10,25 @@ source:
   sha256: 3ee5003a314954032b96b1365290541346c9cc24aab071b52cc983bb99ecafbf
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - redis-py
     - sortedcontainers
     - poetry
   run:
-    - python >=3.7,<4
+    - python >={{ python_min }},<4
     - redis-py >=4
     - sortedcontainers >=2.4.0,<3
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - fakeredis
 
