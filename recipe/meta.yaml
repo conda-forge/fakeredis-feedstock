@@ -12,25 +12,27 @@ source:
 build:
   number: 1
   noarch: python
-  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
     - python {{ python_min }}
-    - redis-py
-    - sortedcontainers
-    - poetry
+    - poetry-core
   run:
     - python >={{ python_min }},<4
-    - redis-py >=4
+    - redis-py >=4.3
     - sortedcontainers >=2.4.0,<3
+    - typing-extensions >=4.7,<5
 
 test:
   requires:
     - python {{ python_min }}
+    - pip
   imports:
     - fakeredis
+  commands:
+    - pip check
 
 about:
   home: https://github.com/cunla/fakeredis-py
@@ -42,3 +44,4 @@ about:
 extra:
   recipe-maintainers:
     - cunla
+    - synapticarbors
