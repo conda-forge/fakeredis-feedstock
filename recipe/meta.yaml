@@ -10,25 +10,29 @@ source:
   sha256: 3ee5003a314954032b96b1365290541346c9cc24aab071b52cc983bb99ecafbf
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7
-    - redis-py
-    - sortedcontainers
-    - poetry
+    - python {{ python_min }}
+    - poetry-core
   run:
-    - python >=3.7,<4
-    - redis-py >=4
+    - python >={{ python_min }},<4
+    - redis-py >=4.3
     - sortedcontainers >=2.4.0,<3
+    - typing-extensions >=4.7,<5
 
 test:
+  requires:
+    - python {{ python_min }}
+    - pip
   imports:
     - fakeredis
+  commands:
+    - pip check
 
 about:
   home: https://github.com/cunla/fakeredis-py
@@ -40,3 +44,4 @@ about:
 extra:
   recipe-maintainers:
     - cunla
+    - synapticarbors
