@@ -144,4 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@cunla](https://github.com/cunla/)
+* [@synapticarbors](https://github.com/synapticarbors/)
 
