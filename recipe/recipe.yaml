@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: fakeredis
-  version: "2.36.2"
+  version: "2.37.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: c37a0b307fae3f27ec7c19e59519e57b8c52782e00303df9075361b5ba441be6
+  sha256: 7461f124dcba04a80691d72270b3d1d5cd100ef14dc068c76db825940f3ed799
 
 build:
   number: 0
